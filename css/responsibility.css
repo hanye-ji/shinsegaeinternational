@@ -1,0 +1,286 @@
+@charset "utf-8";
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/variable/pretendardvariable.css");
+body {
+  width: 100%;
+  color: #000;
+  font-family: "Pretendard Variable", sans-serif;
+}
+ul li a span {
+  position: relative;
+}
+ul li a span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  background: #000;
+  width: 0;
+  height: 1px;
+  transition: width 0.5s;
+}
+ul li a:hover span::after {
+  width: 100%;
+}
+header {
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 81px;
+  border-bottom: 1px solid #eee;
+  font-weight: 500;
+  background: #fff;
+}
+h1 {
+  margin: 0 60px 0 110px;
+}
+h1 img {
+  width: 124px;
+}
+.gnb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1280px;
+  height: 81px;
+  padding: 0 180px;
+}
+.gnb li a {
+  font-size: 17px;
+  letter-spacing: 1px;
+}
+.gnb li a.on span {
+  position: relative;
+}
+.gnb li a.on span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 1px;
+  background: #000;
+}
+main section {
+  padding-top: 81px;
+  text-align: center;
+}
+main section h2 {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 65px;
+  padding: 44px 0;
+}
+main section h2 span {
+  position: relative;
+}
+main section h2 span::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -11px;
+  width: 46px;
+  height: 1px;
+  background: #000;
+}
+main section .title {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 66px;
+}
+main section .text {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 300;
+}
+main section .container1 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 760px;
+  background: url(../images/csr_visual_bg.jpg) no-repeat;
+  background-size: 100% 760px;
+  color: #fff;
+}
+main section .container1 .title {
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+main section .container1 .text {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 63px;
+}
+main section .container2 {
+  margin: 120px 0;
+}
+main section .container2 .text {
+  margin-top: 40px;
+}
+main section .container2 img {
+  width: 1200px;
+}
+main section .container2 .more::after {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 14px;
+  background: url(../images/document.svg) no-repeat;
+  margin-left: 4px;
+}
+main section .container2 .more {
+  font-size: 15px;
+  line-height: 15px;
+  font-weight: 300;
+  margin: 60px 0 80px;
+}
+main section .container2 .more span {
+  position: relative;
+}
+main section .container2 .more span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 111px;
+  height: 1px;
+  background: #000;
+  transition: width 0.5s;
+}
+main section .container2 .more:hover span::after {
+  width: 0;
+}
+main section .container3 {
+  width: 1280px;
+  margin: auto;
+}
+main section .container3 .title {
+  font-size: 40px;
+  line-height: 42px;
+  margin-bottom: 20px;
+}
+main section .container3 table {
+  width: 1280px;
+  margin-top: 60px;
+  border-top: 1px solid #000;
+}
+main section .container3 table tbody {
+  display: flex;
+  flex-direction: column;
+}
+main section .container3 table tr {
+  display: flex;
+  justify-content: space-between;
+  height: 115px;
+  padding: 40px 0;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 34px;
+}
+main section .container3 table .num {
+  width: 88px;
+  margin-left: 40px;
+}
+main section .container3 table .tt {
+  width: 511px;
+  font-size: 28px;
+  font-weight: 700;
+}
+main section .container3 table .txt {
+  width: 601px;
+  margin-left: 40px;
+}
+main section .container4 {
+  justify-items: center;
+  width: 100%;
+  height: 990px;
+  background: url(../images/csr_item_02_pc.jpg) no-repeat;
+  background-size: 100% 990px;
+  color: #fff;
+  margin-top: 120px;
+}
+main section .container4 .inner {
+  width: 1280px;
+  height: 100%;
+  padding: 120px 39px;
+}
+main section .container4 .box {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  gap: 32px;
+  width: 1280px;
+  margin-top: 60px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+}
+main section .container4 .box > li {
+  width: 584px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: rgba(0, 0, 0, 0.25);
+  padding: 40px;
+  text-align: left;
+}
+main section .container4 .box .boxtitle {
+  display: block;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  margin-bottom: 20px;
+}
+main section .container4 .bullet {
+  position: relative;
+  padding-left: 14px;
+}
+main section .container4 .bullet::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 13px;
+  width: 4px;
+  height: 4px;
+  background: #fff;
+  opacity: 0.6;
+  border-radius: 50%;
+}
+footer {
+  width: 100%;
+  font-weight: 500;
+}
+footer .footlogo {
+  width: 100%;
+  text-align: center;
+  padding: 50px 0 20px;
+}
+footer ul {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  width: 892px;
+  padding: 23px 0;
+}
+footer ul li a {
+  font-size: 15px;
+  line-height: 24px;
+}
+footer ul li a strong {
+  font-weight: bolder;
+}
+footer address {
+  width: 100%;
+  text-align: center;
+  padding: 22px 0;
+  border-top: 1px solid #eee;
+  font-size: 13px;
+  line-height: 13px;
+  color: #999;
+}

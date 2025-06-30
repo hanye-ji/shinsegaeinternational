@@ -1,0 +1,168 @@
+@charset "utf-8";
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/variable/pretendardvariable.css");
+body {
+  width: 100%;
+  color: #000;
+  font-family: "Pretendard Variable", sans-serif;
+}
+ul li a span {
+  position: relative;
+}
+ul li a span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  background: #000;
+  width: 0;
+  height: 1px;
+  transition: width 0.5s;
+}
+ul li a:hover span::after {
+  width: 100%;
+}
+header {
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 81px;
+  border-bottom: 1px solid #eee;
+  font-weight: 500;
+  background: #fff;
+}
+h1 {
+  margin: 0 60px 0 110px;
+}
+h1 img {
+  width: 124px;
+}
+.gnb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1280px;
+  height: 81px;
+  padding: 0 180px;
+}
+.gnb li a {
+  font-size: 17px;
+  letter-spacing: 1px;
+}
+.gnb li a.on span {
+  position: relative;
+}
+.gnb li a.on span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 1px;
+  background: #000;
+}
+main section {
+  padding-top: 81px;
+  text-align: center;
+}
+main section h2 {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 65px;
+  padding: 44px 0;
+}
+main section h2 span {
+  position: relative;
+}
+main section h2 span::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -11px;
+  width: 46px;
+  height: 1px;
+  background: #000;
+}
+main section .title {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 66px;
+}
+main section .text {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 300;
+}
+main section .company {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 760px;
+  background: url(../images/introduction_visual_bg.jpg) no-repeat;
+  background-size: 100% 760px;
+  color: #fff;
+}
+main section .company img {
+  display: block;
+  width: 336px;
+  height: 16px;
+  margin: 0 auto 20px;
+}
+main section .company .text {
+  margin-top: 40px;
+}
+main section .mission {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 682px;
+  background: url(../images/introduction_mission_bg.jpg) no-repeat;
+  background-size: 100% 682px;
+}
+main section .mission .strong {
+  margin: 50px 0;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 36px;
+}
+main section .mission p:nth-of-type(4) {
+  margin: 30px 0;
+}
+footer {
+  width: 100%;
+  font-weight: 500;
+}
+footer .footlogo {
+  width: 100%;
+  text-align: center;
+  padding: 50px 0 20px;
+}
+footer ul {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  width: 892px;
+  padding: 23px 0;
+}
+footer ul li a {
+  font-size: 15px;
+  line-height: 24px;
+}
+footer ul li a strong {
+  font-weight: bolder;
+}
+footer address {
+  width: 100%;
+  text-align: center;
+  padding: 22px 0;
+  border-top: 1px solid #eee;
+  font-size: 13px;
+  line-height: 13px;
+  color: #999;
+}
